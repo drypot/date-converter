@@ -6,6 +6,20 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		00A6FB542D2BA76200DA414C /* DateConverterFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A6FB4C2D2BA76200DA414C /* DateConverterFramework.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00A6FB552D2BA76200DA414C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00A6FB312D2B998100DA414C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00A6FB4B2D2BA76200DA414C;
+			remoteInfo = DateConverterFramework;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		00A6FB372D2B998100DA414C /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -22,12 +36,37 @@
 		00A6FB392D2B998100DA414C /* DateConverter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DateConverter; sourceTree = BUILT_PRODUCTS_DIR; };
 		00A6FB452D2BA4D200DA414C /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		00A6FB462D2BA4D200DA414C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		00A6FB4C2D2BA76200DA414C /* DateConverterFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DateConverterFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		00A6FB532D2BA76200DA414C /* DateConverterFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DateConverterFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		00A6FB5B2D2BA76200DA414C /* Exceptions for "DateConverterFramework" folder in "DateConverterFramework" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			publicHeaders = (
+				DateConverterFramework.h,
+			);
+			target = 00A6FB4B2D2BA76200DA414C /* DateConverterFramework */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		00A6FB3B2D2B998100DA414C /* DateConverter */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = DateConverter;
+			sourceTree = "<group>";
+		};
+		00A6FB4D2D2BA76200DA414C /* DateConverterFramework */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				00A6FB5B2D2BA76200DA414C /* Exceptions for "DateConverterFramework" folder in "DateConverterFramework" target */,
+			);
+			path = DateConverterFramework;
+			sourceTree = "<group>";
+		};
+		00A6FB572D2BA76200DA414C /* DateConverterFrameworkTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = DateConverterFrameworkTests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -40,6 +79,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		00A6FB492D2BA76200DA414C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00A6FB502D2BA76200DA414C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00A6FB542D2BA76200DA414C /* DateConverterFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -49,6 +103,8 @@
 				00A6FB452D2BA4D200DA414C /* LICENSE */,
 				00A6FB462D2BA4D200DA414C /* README.md */,
 				00A6FB3B2D2B998100DA414C /* DateConverter */,
+				00A6FB4D2D2BA76200DA414C /* DateConverterFramework */,
+				00A6FB572D2BA76200DA414C /* DateConverterFrameworkTests */,
 				00A6FB3A2D2B998100DA414C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,11 +113,23 @@
 			isa = PBXGroup;
 			children = (
 				00A6FB392D2B998100DA414C /* DateConverter */,
+				00A6FB4C2D2BA76200DA414C /* DateConverterFramework.framework */,
+				00A6FB532D2BA76200DA414C /* DateConverterFrameworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		00A6FB472D2BA76200DA414C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		00A6FB382D2B998100DA414C /* DateConverter */ = {
@@ -86,6 +154,52 @@
 			productReference = 00A6FB392D2B998100DA414C /* DateConverter */;
 			productType = "com.apple.product-type.tool";
 		};
+		00A6FB4B2D2BA76200DA414C /* DateConverterFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00A6FB5C2D2BA76200DA414C /* Build configuration list for PBXNativeTarget "DateConverterFramework" */;
+			buildPhases = (
+				00A6FB472D2BA76200DA414C /* Headers */,
+				00A6FB482D2BA76200DA414C /* Sources */,
+				00A6FB492D2BA76200DA414C /* Frameworks */,
+				00A6FB4A2D2BA76200DA414C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				00A6FB4D2D2BA76200DA414C /* DateConverterFramework */,
+			);
+			name = DateConverterFramework;
+			packageProductDependencies = (
+			);
+			productName = DateConverterFramework;
+			productReference = 00A6FB4C2D2BA76200DA414C /* DateConverterFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		00A6FB522D2BA76200DA414C /* DateConverterFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00A6FB5F2D2BA76200DA414C /* Build configuration list for PBXNativeTarget "DateConverterFrameworkTests" */;
+			buildPhases = (
+				00A6FB4F2D2BA76200DA414C /* Sources */,
+				00A6FB502D2BA76200DA414C /* Frameworks */,
+				00A6FB512D2BA76200DA414C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00A6FB562D2BA76200DA414C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				00A6FB572D2BA76200DA414C /* DateConverterFrameworkTests */,
+			);
+			name = DateConverterFrameworkTests;
+			packageProductDependencies = (
+			);
+			productName = DateConverterFrameworkTests;
+			productReference = 00A6FB532D2BA76200DA414C /* DateConverterFrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -97,6 +211,12 @@
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
 					00A6FB382D2B998100DA414C = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					00A6FB4B2D2BA76200DA414C = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					00A6FB522D2BA76200DA414C = {
 						CreatedOnToolsVersion = 16.2;
 					};
 				};
@@ -116,9 +236,28 @@
 			projectRoot = "";
 			targets = (
 				00A6FB382D2B998100DA414C /* DateConverter */,
+				00A6FB4B2D2BA76200DA414C /* DateConverterFramework */,
+				00A6FB522D2BA76200DA414C /* DateConverterFrameworkTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00A6FB4A2D2BA76200DA414C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00A6FB512D2BA76200DA414C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		00A6FB352D2B998100DA414C /* Sources */ = {
@@ -128,7 +267,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		00A6FB482D2BA76200DA414C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00A6FB4F2D2BA76200DA414C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00A6FB562D2BA76200DA414C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00A6FB4B2D2BA76200DA414C /* DateConverterFramework */;
+			targetProxy = 00A6FB552D2BA76200DA414C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		00A6FB3E2D2B998100DA414C /* Debug */ = {
@@ -271,6 +432,106 @@
 			};
 			name = Release;
 		};
+		00A6FB5D2D2BA76200DA414C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XFTC3W2MNQ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.drypot.DateConverterFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		00A6FB5E2D2BA76200DA414C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XFTC3W2MNQ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.drypot.DateConverterFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		00A6FB602D2BA76200DA414C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XFTC3W2MNQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.drypot.DateConverterFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		00A6FB612D2BA76200DA414C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XFTC3W2MNQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.drypot.DateConverterFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -288,6 +549,24 @@
 			buildConfigurations = (
 				00A6FB412D2B998100DA414C /* Debug */,
 				00A6FB422D2B998100DA414C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00A6FB5C2D2BA76200DA414C /* Build configuration list for PBXNativeTarget "DateConverterFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00A6FB5D2D2BA76200DA414C /* Debug */,
+				00A6FB5E2D2BA76200DA414C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00A6FB5F2D2BA76200DA414C /* Build configuration list for PBXNativeTarget "DateConverterFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00A6FB602D2BA76200DA414C /* Debug */,
+				00A6FB612D2BA76200DA414C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
